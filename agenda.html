@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda — 16ART</title>
+<meta name="description" content="Tous les événements 16ART et de la scène strasbourgeoise, en calendrier ou sur la carte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo display"><span class="num">16</span>ART</a>
+  <div class="navlinks">
+    <a href="collectif.html">Le collectif</a>
+    <a href="univers.html">Univers</a>
+    <a href="agenda.html">Agenda</a>
+    <a href="talents.html">Talents</a>
+    <a href="lieux.html">Lieux</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="partenaires.html">Partenaires</a>
+  </div>
+  <a href="rejoindre.html" class="nav-cta">Rejoindre</a>
+</nav>
+
+<section class="page-hero" style="border-bottom:none; padding-bottom:0;">
+  <div class="eyebrow"><span class="dot">●</span> Agenda</div>
+  <h1 class="display">Que cherches-tu<br>à Strasbourg ?</h1>
+</section>
+
+<section style="padding-top:40px;">
+  <div class="searchbar">
+    <input type="text" placeholder="Un artiste, une salle, un style...">
+    <button>Rechercher</button>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="nos">Nos événements</div>
+    <div class="tab" data-tab="tous">Tous les événements de Strasbourg</div>
+  </div>
+
+  <div class="chips" style="margin-bottom:50px;">
+    <div class="chip active">Tous</div>
+    <div class="chip">Rap</div>
+    <div class="chip">House</div>
+    <div class="chip">Techno</div>
+    <div class="chip">Afro</div>
+    <div class="chip">R&amp;B</div>
+    <div class="chip">Latino</div>
+    <div class="chip">Concert</div>
+    <div class="chip">Festival</div>
+    <div class="chip">Gratuit</div>
+    <div class="chip">Étudiant</div>
+    <div class="chip">+18</div>
+    <div class="chip">Open air</div>
+  </div>
+
+  <div class="chips" style="margin-bottom:50px;">
+    <div class="chip active" data-view="calendar">Vue calendrier</div>
+    <div class="chip" data-view="map">Vue carte</div>
+  </div>
+
+  <!-- Vue calendrier -->
+  <div id="view-calendar">
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:24px;">
+      <h3 class="display" style="font-size:20px;">Juin 2026</h3>
+      <div style="display:flex; gap:10px;">
+        <div class="chip">←</div>
+        <div class="chip">→</div>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(7,1fr); border:1px solid var(--line); border-bottom:none;">
+      <div style="padding:10px; font-size:11px; text-transform:uppercase; color:var(--paper-dim); border-bottom:1px solid var(--line);">Lun</div>
+      <div style="padding:10px; font-size:11px; text-transform:uppercase; color:var(--paper-dim); border-bottom:1px solid var(--line);">Mar</div>
+      <div style="padding:10px; font-size:11px; text-transform:uppercase; color:var(--paper-dim); border-bottom:1px solid var(--line);">Mer</div>
+      <div style="padding:10px; font-size:11px; text-transform:uppercase; color:var(--paper-dim); border-bottom:1px solid var(--line);">Jeu</div>
+      <div style="padding:10px; font-size:11px; text-transform:uppercase; color:var(--paper-dim); border-bottom:1px solid var(--line);">Ven</div>
+      <div style="padding:10px; font-size:11px; text-transform:uppercase; color:var(--paper-dim); border-bottom:1px solid var(--line);">Sam</div>
+      <div style="padding:10px; font-size:11px; text-transform:uppercase; color:var(--paper-dim); border-bottom:1px solid var(--line);">Dim</div>
+    </div>
+    <div id="cal-grid" style="display:grid; grid-template-columns:repeat(7,1fr); border-left:1px solid var(--line);"></div>
+  </div>
+
+  <!-- Vue carte -->
+  <div id="view-map" style="display:none;">
+    <div style="border:1px solid var(--line); height:480px; overflow:hidden;">
+      <iframe title="Carte de Strasbourg" width="100%" height="100%" style="border:0; filter:grayscale(1) invert(0.92) contrast(0.85);" src="https://www.openstreetmap.org/export/embed.html?bbox=7.700%2C48.550%2C7.790%2C48.610&amp;layer=mapnik"></iframe>
+    </div>
+    <p style="color:var(--paper-dim); font-size:12px; margin-top:16px;">Carte à titre indicatif — les épingles d'événements géolocalisés s'activeront une fois l'agenda connecté à la base de données.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="eyebrow"><span class="dot">●</span> Événements populaires</div>
+    <h2 class="display">Ceux dont on parle.</h2>
+  </div>
+  <div class="grid-3">
+    <a href="#" class="card"><div class="card-media">Visuel</div><div class="card-eyebrow" style="margin-top:16px;">26.05 — OPEN MIC</div><h3>Scène ouverte 16ART</h3><p>La Laiterie · Rap, poésie, chant, beatmaking</p></a>
+    <a href="#" class="card"><div class="card-media">Visuel</div><div class="card-eyebrow" style="margin-top:16px;">14.06 — CONCERT</div><h3>Soirée showcase</h3><p>Molodoï · Rap émergent</p></a>
+    <a href="#" class="card"><div class="card-media">Visuel</div><div class="card-eyebrow" style="margin-top:16px;">NOVEMBRE — FLAGSHIP</div><h3>Le grand événement 16ART</h3><p>Pavillon Joséphine · 800 personnes</p></a>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+  }));
+  document.querySelectorAll('.chip[data-view]').forEach(c => c.addEventListener('click', () => {
+    document.querySelectorAll('.chip[data-view]').forEach(x => x.classList.remove('active'));
+    c.classList.add('active');
+    const v = c.dataset.view;
+    document.getElementById('view-calendar').style.display = v === 'calendar' ? 'block' : 'none';
+    document.getElementById('view-map').style.display = v === 'map' ? 'block' : 'none';
+  }));
+  document.querySelectorAll('.chips:not([id]) .chip:not([data-view])').forEach(c => c.addEventListener('click', () => {
+    if(c.textContent.trim() === 'Tous'){
+      document.querySelectorAll('.chip:not([data-view])').forEach(x => x.classList.remove('active'));
+      c.classList.add('active');
+    } else {
+      document.querySelector('.chip.active:not([data-view])')?.classList.remove('active');
+      c.classList.toggle('active');
+    }
+  }));
+
+  const events = {12: 'Open Mic', 20: 'Showcase', 27: 'Soirée house'};
+  const grid = document.getElementById('cal-grid');
+  const firstDay = 0; // lundi
+  for(let i=0;i<firstDay;i++){ grid.innerHTML += '<div style="min-height:90px; border-right:1px solid var(--line); border-bottom:1px solid var(--line);"></div>'; }
+  for(let d=1; d<=30; d++){
+    const ev = events[d] ? `<div style="margin-top:8px; font-size:10px; background:var(--red-dim); color:var(--paper); padding:3px 6px; display:inline-block;">${events[d]}</div>` : '';
+    grid.innerHTML += `<div style="min-height:90px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); padding:10px;"><div style="font-size:12px; color:var(--paper-dim);">${d}</div>${ev}</div>`;
+  }
+</script>
+
+<footer>
+  <div class="eyebrow"><span class="dot">●</span> Le manifeste</div>
+  <div class="manifeste" style="margin-top:24px; max-width:820px;">
+    <p>Nous croyons que chaque quartier possède des talents.</p>
+    <p>Nous croyons que la culture rapproche les gens.</p>
+    <p>Nous croyons que les plus grandes histoires commencent sur de petites scènes.</p>
+    <p class="accent-line">Nous croyons que les artistes de demain sont déjà parmi nous.</p>
+  </div>
+  <div class="foot-cta display">Créer. Oser. Rassembler.</div>
+  <div class="foot-cols">
+    <div class="foot-col">
+      <h4>Explorer</h4>
+      <a href="collectif.html">Le collectif</a>
+      <a href="univers.html">Nos univers</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="talents.html">Talents</a>
+      <a href="lieux.html">Lieux</a>
+    </div>
+    <div class="foot-col">
+      <h4>Participer</h4>
+      <a href="rejoindre.html">Proposer un artiste</a>
+      <a href="rejoindre.html">Devenir bénévole</a>
+      <a href="rejoindre.html">Devenir partenaire</a>
+      <a href="rejoindre.html">Proposer un projet</a>
+    </div>
+    <div class="foot-col">
+      <h4>Association</h4>
+      <a href="partenaires.html">Partenaires</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="rejoindre.html">Contact</a>
+    </div>
+    <div class="foot-col">
+      <h4>Suivre</h4>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://open.spotify.com" target="_blank" rel="noopener">Spotify</a>
+    </div>
+  </div>
+  <div class="foot-baseline">
+    <span>16ART © 2026 — Strasbourg</span>
+    <span>@16art.officiel</span>
+  </div>
+</footer>
+
+</body>
+</html>
