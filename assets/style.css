@@ -53,6 +53,7 @@ section{padding:110px 6vw; position:relative; border-bottom:1px solid var(--line
 .card{background:var(--black); padding:34px 28px; transition:background .2s; cursor:pointer;}
 .card:hover{background:#0c0505;}
 .card-eyebrow{font-size:11px; color:var(--paper-dim); letter-spacing:0.1em;}
+.eyebrow-red{color:var(--red);}
 .card h3{font-size:20px; margin-top:16px; font-weight:700;}
 .card p{color:var(--paper-dim); font-size:13px; margin-top:10px; line-height:1.6;}
 .card .mark{color:var(--red); font-size:20px; margin-top:18px;}
