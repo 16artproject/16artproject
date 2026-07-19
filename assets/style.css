@@ -19,6 +19,14 @@ img{max-width:100%; display:block;}
 .eyebrow .dot{color:var(--red);}
 
 /* nav */
+.hero-bg{
+  position:relative; min-height:92vh; display:flex; flex-direction:column; justify-content:center;
+  border-bottom:1px solid var(--line); padding-top:0; padding-bottom:0;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 32%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.15) 100%), url("images/hero-concert.png");
+  background-size: cover;
+  background-position: center;
+}
+/* nav */
 nav{position:sticky; top:0; left:0; right:0; z-index:40; display:flex; align-items:center; justify-content:space-between; padding:26px 6vw; background:rgba(0,0,0,0.88); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
 .logo{font-size:20px; display:flex; align-items:baseline; gap:6px;}
 .logo .num{color:var(--red);}
